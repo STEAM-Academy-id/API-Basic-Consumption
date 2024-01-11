@@ -1,0 +1,57 @@
+:root {
+  --background: #252525;
+  --main_text_color: white;
+  --secondary_text_color: #ddd;
+}
+
+body {
+  background-color: var(--background);
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--main_text_color);
+}
+
+h1 {
+  text-align: center;
+}
+
+.containerCharacter {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1em;
+  padding: 2em;
+}
+
+.carCharactar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--secondary_text_color);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: none;
+  margin-bottom: 1em;
+}
+
+.carCharactar img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.containerInfo {
+  text-align: center;
+}
+
+.containerInfo h2 {
+  margin: 0;
+  padding: 0.5em 0;
+  color: var(--main_text_color);
+}
+
+.containerInfo p {
+  margin: 0;
+  padding: 0.5em 0;
+  color: var(--secondary_text_color);
+}
